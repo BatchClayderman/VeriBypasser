@@ -1,31 +1,38 @@
-# 基于CNN识别验证码(Pytorch)
+# 基于CNN识别验证码（Pytorch）
 
 ##  前言
 
 参考链接：https://github.com/dee1024/pytorch-captcha-recognition
 
-这个学期选了**人工智能**专业课(bushi🐶)!
+这个学期选了**人工智能**专业课！
 
-这就是我们小组的**期末作业**了，既然要做，那就开源搞一个能用于**实战**的。
+这就是我们小组的**期末作业**了，既然要做，那就开源搞一个既能用于**理论**又能用于**工程（实战）**的。
 
 然后就**重构**了一下，以及弄了下**拓展**。
+
+深度学习用到的第三方库：torch、cnn_model、tqdm
+
+机器学习用到的第三方库：torch、pandas、matplotlib
 
 ##  效果与原理
 
 **训练集**: （使用常用的 Python 验证码生成库 ImageCaptcha）
 
 ```
-Training set : 100k
-Test set: 5k
+Data set: 100k
+Training set: 50k
+Testing set: 10k
+Prediction set: 40k
 ```
 
 ------
 
-> 准确率的话是数量越多越趋近最后的准确值(会存在偏差)
+> 准确率的话是数量越多越趋近最后的准确值（会存在偏差）
 
 |      类型      | 准确率 |                             权重                             | 提取码 |
 | :------------: | :----: | :----------------------------------------------------------: | :----: |
-|  4位数字+大写  | 85.2%  | [下载链接]( https://pan.baidu.com/s/1IC7qvrJKrwygMT5r_hN8aA ) |  spdc  |
+|    4位数字     | 98.32% |                     （均能取得较好效果）                     |   ——   |
+|  4位数字+大写  | 85.20% | [下载链接]( https://pan.baidu.com/s/1IC7qvrJKrwygMT5r_hN8aA ) |  spdc  |
 | 4位数字+大小写 | 72.38% | [下载链接](https://pan.baidu.com/s/1ubshKMdjuRSvc7405cON8w)  |  he0w  |
 
 <img src="https://dailypic.hengyimonster.top/rate72.png" alt="image-20211211200828095" style="zoom:66%;" />
@@ -81,19 +88,21 @@ $ python predict.py
 ## 日志与展望
 
 - 日志📝 
-  - 2021-12-11:  代码基本成型。4位数字+大写字母的争取率稳定在85%左右
+  - 2021-12-11:  代码基本成型。4位数字+大写字母的准确度稳定在85%左右
   - 2021-12-18:  4位数字+大小写字母模型经过一周训练最高73%左右
   - 2021-12-19：上传基本成型的仓库。
 - 展望🦅
 
-  - 准确率能够来到90以上。
+  - 4位数字+大小写字母的准确度能够来到90%以上。
 
 ##  联系方式
 
-期待您的PR
-
-以及不要脸的🙇‍♀️您的更加优秀的超参数。
+期待您的PR以及您的更加优秀的超参数~
 
 我们是来自**暨南大学**某不知名小组～
 
 **负责人**联系邮箱📮 2911567026@qq.com
+
+# 进阶版
+
+[https://github.com/HengY1Sky/Jnu-Stuhealth](https://github.com/HengY1Sky/Jnu-Stuhealth)
